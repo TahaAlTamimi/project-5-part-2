@@ -1,17 +1,17 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 
 const SearchBar =(props)=> (
 
-<div>
+<div >
     <h3>
     
-    <i class="fas fa-bread-slice"></i> 
+    <i className="fas fa-bread-slice"></i> 
     Find more recipe
     </h3>
 
-        <form onSubmit={props.get}> 
-        <input type="text" name="item"/>
+        <form onSubmit={props.get.bind(this)} style={{marginBottom:"2rem"}}> 
+        <input type="text" name="item" />
         <button >Search</button>
          </form>
 
