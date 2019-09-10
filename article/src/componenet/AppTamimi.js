@@ -27,6 +27,10 @@ export class AppTamimi extends Component {
         console.log(write)
     }
 
+
+
+    
+
     render() {
         return (
             <div>
