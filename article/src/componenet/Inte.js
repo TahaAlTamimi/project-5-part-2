@@ -1,17 +1,17 @@
-import React, { Component } from 'react'
+// import React, { Component } from 'react'
 
-export class Inte extends Component {
-    state = {
+// export class Inte extends Component {
 
-    }
 
-    render() {
-        return (
-            <div>
-                
-            </div>
-        )
-    }
-}
+//     render() {
+//         // console.log(this.props.content)
+//         return (
+//             <div>
+//                 {/* <img src={this.props.photo}/> */}
+//                 <li> {this.props.content.text}</li>
+//             </div>
+//         )
+//     }
+// }
 
-export default Inte
+// export default Inte
