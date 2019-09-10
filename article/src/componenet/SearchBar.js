@@ -10,7 +10,7 @@ const SearchBar =(props)=> (
     Find more recipe
     </h3>
 
-        <form onSubmit={props.get.bind(this)} style={{marginBottom:"2rem"}}> 
+        <form onSubmit={props.get} style={{marginBottom:"2rem"}}> 
         <input type="text" name="item" />
         <button >Search</button>
          </form>

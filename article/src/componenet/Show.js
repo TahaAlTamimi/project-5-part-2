@@ -9,11 +9,15 @@ export class Show extends Component {
         console.log(this.props.item)
         return (
             <div>
-                         <img className="recipe__box-img" src={this.props.item.image_url} alt={this.props.item.title}/>
+                         <img className="recipe__box-img" src={this.props.item.recipe.image} alt={this.props.item.recipe.label}/>
                              <h3>
-                            {this.props.item.title} 
+                            {this.props.item.recipe.label} 
                             </h3>
                             <p>Publisher:<span></span></p>
+                           
+                            <div>
+                                <button > View Recipe</button>
+                            </div>
 
             </div>
                    

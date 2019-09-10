@@ -12,12 +12,13 @@ export class AppTamimi extends Component {
         e.preventDefault();
         const write=e.target.item.value;
         
-            axios.get(`https://www.food2fork.com/api/search?key=aedbb2d845263a9cad4857bcec585195&q=${write}&count=6`)
+            axios.get(`https://api.edamam.com/search?q=${write}&app_id=77d87f48&app_key=
+            51d677ed63085c24fce0cf038ed04cd0`)
             .then(res=>{
-                // console.log(res.data.recipes)
+                console.log(res.data.hits)
 
                 this.setState({
-                    item:res.data.recipes
+                    item:res.data.hits
                 })
             })
             
@@ -43,7 +44,6 @@ export class AppTamimi extends Component {
                    
                    )
                 })}
-
             </div>
         )
     }
