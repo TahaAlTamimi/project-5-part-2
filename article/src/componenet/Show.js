@@ -8,11 +8,11 @@ export class Show extends Component {
 
     }
 
-    clear = () => {
-        this.setState({
-            recipeState: ""
-        })
-    }
+    // clear = () => {
+    //     this.setState({
+    //         recipeState: ""
+    //     })
+    // }
 
     // shouldComponentUpdate(nextprops, nextstate) {
     //     console.log('nextprops:', nextprops.item.recipe.label)
@@ -25,7 +25,7 @@ export class Show extends Component {
         // console.log("item",recipe)
         // const write=e.target.item.value;t
 
-        console.log(this.state.appear)
+        // console.log(this.state.appear)
         this.setState({
             appear:!this.state.appear
         })
@@ -52,7 +52,7 @@ export class Show extends Component {
 
     render() {
         // console.log(this.props.item)
-        console.log(this.props.item.recipe)
+        // console.log(this.props.item.recipe)
         return (
             <div>
                 <img className="recipe__box-img" src={this.props.item.recipe.image} alt={this.props.item.recipe.label} />

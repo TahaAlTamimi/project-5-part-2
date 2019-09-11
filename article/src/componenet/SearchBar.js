@@ -11,7 +11,8 @@ const SearchBar =(props)=> (
     </h3>
 
         <form onSubmit={props.get} style={{marginBottom:"2rem"}}> 
-        <input type="text" name="item" />
+        <p>food:<input type="text" name="item" /></p><br></br>
+        <p>calories: <input type="number" name="number"/> </p>
         <button >Search</button>
          </form>
 
