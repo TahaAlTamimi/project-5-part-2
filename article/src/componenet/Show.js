@@ -61,7 +61,7 @@ export class Show extends Component {
                 </h3>
                 {this.state.appear? <div>
 
-                    <h5>Calories:{this.props.item.recipe.calories}</h5>
+                    {/* <h5>need to ready in {this.props.item.recipe.yield} Min</h5> */}
                     <p>
                         {this.props.item.recipe.ingredients.map((item,index)=>{
                             return <li key={index}>{item.text}</li>
